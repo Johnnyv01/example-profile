@@ -91,13 +91,13 @@ const Projects = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          <motion.h2 
+          <motion.h2
             className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900"
             variants={cardVariants}
           >
-            Featured Projects
+            Projetos em destaque
           </motion.h2>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <motion.div
@@ -113,27 +113,27 @@ const Projects = () => {
                   </div>
                   <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-300"></div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
                     {project.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
-                      <span 
-                        key={tech} 
+                      <span
+                        key={tech}
                         className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm font-medium"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  
+
                   <button className="btn-primary w-full group-hover:bg-blue-700 transition-colors duration-200">
                     View More
                   </button>
@@ -141,16 +141,16 @@ const Projects = () => {
               </motion.div>
             ))}
           </div>
-          
-          <motion.div 
+
+          <motion.div
             className="text-center mt-12"
             variants={cardVariants}
           >
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="btn-secondary inline-flex items-center gap-2 text-lg"
             >
-              View All Projects
+              Visualizar todos os projetos
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

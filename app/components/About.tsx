@@ -61,10 +61,6 @@ const About = () => {
                 Spring Boot e Node.js. Minha abordagem combina princípios de código limpo com design centrado no
                 usuário para proporcionar experiências digitais excepcionais.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Quando não estou programando, gosto de explorar novas tecnologias, contribuir para
-                projetos de código aberto e compartilhar conhecimento com a comunidade de desenvolvedores.
-              </p>
             </motion.div>
 
             <motion.div
@@ -74,7 +70,7 @@ const About = () => {
               <div className="bg-gray-50 p-6 rounded-xl">
                 <h4 className="text-xl font-semibold mb-4 text-gray-800">Frontend Technologies</h4>
                 <div className="flex flex-wrap gap-3">
-                  {['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'JavaScript'].map((tech) => (
+                  {['Angular','React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'JavaScript'].map((tech) => (
                     <span key={tech} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
                       {tech}
                     </span>
@@ -85,7 +81,7 @@ const About = () => {
               <div className="bg-gray-50 p-6 rounded-xl">
                 <h4 className="text-xl font-semibold mb-4 text-gray-800">Backend Technologies</h4>
                 <div className="flex flex-wrap gap-3">
-                  {['Java', 'Spring Boot', 'Node.js', 'PostgreSQL', 'MongoDB'].map((tech) => (
+                  {['Java', 'Spring Boot', 'Node.js','Quarkus', 'PostgreSQL', 'MySQL'].map((tech) => (
                     <span key={tech} className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                       {tech}
                     </span>
@@ -94,9 +90,9 @@ const About = () => {
               </div>
 
               <div className="bg-gray-50 p-6 rounded-xl">
-                <h4 className="text-xl font-semibold mb-4 text-gray-800">Tools & Others</h4>
+                <h4 className="text-xl font-semibold mb-4 text-gray-800">Devops & Others</h4>
                 <div className="flex flex-wrap gap-3">
-                  {['Git', 'Docker', 'AWS', 'REST APIs', 'Agile'].map((tech) => (
+                  {['Git', 'Docker', 'AWS', 'REST APIs'].map((tech) => (
                     <span key={tech} className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
                       {tech}
                     </span>
